@@ -28,7 +28,7 @@ $response = json_encode([
     'github_file_url' => $github_file_url,
     'github_repo_url' => $github_repo_url,
     'status_code' => http_response_code(),
-], JSON_UNESCAPED_SLASHES);
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 echo $response;
 
