@@ -30,6 +30,9 @@ $response = json_encode([
     'status_code' => http_response_code(),
 ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
+// set content type header to json
+header('Content-Type: application/json');
+
 echo $response;
 
 ?>
