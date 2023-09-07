@@ -12,12 +12,12 @@ $track = $_GET['track'];
 // current day of the week
 $current_day = date("l");
 
-// current UTC time accurate within a +/-2 minute window
+// current UTC time
 $utc_time = gmdate('Y-m-d\TH:i:s\Z', time());
 
 // Github details
 $github_file_url = "https://github.com/adelekeogunsona/hng-stage-one/blob/main/api/index.php";
-$github_repo_url = "https://github.com/adelekeogunsona/hng-stage-one.git";
+$github_repo_url = "https://github.com/adelekeogunsona/hng-stage-one";
 
 // return json response
 $response = json_encode([
